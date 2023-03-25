@@ -239,6 +239,7 @@
   h1 {
     @include relative-font-size(2);
 
+    margin-top: calc($spacing-unit);
     border-left: 8px #556b2f solid;
     border-bottom: 2px #556b2f solid;
     padding-left: 10px;
@@ -251,6 +252,7 @@
   h2 {
     @include relative-font-size(1.80);
 
+    margin-top: calc($spacing-unit/2);
     border-bottom: 1px #888888 solid;
 
     @include media-query($on-laptop) {
@@ -261,6 +263,8 @@
   h3 {
     @include relative-font-size(1.625);
 
+    margin-bottom: calc($spacing-unit/10);
+
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
     }
@@ -268,6 +272,8 @@
 
   h4 {
     @include relative-font-size(1.25);
+
+    margin-bottom: calc($spacing-unit/10);
 
     border-left: 8px #DDDDDD solid;
     padding-left: 10px;
