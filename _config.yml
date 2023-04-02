@@ -31,10 +31,13 @@ lang: ja-JP
 #github_username:  jekyll
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+# sass
+sass:
+  sass_dir: _sass
 
 # Pagenate
 paginate_path: "/pages/page:num/"

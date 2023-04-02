@@ -228,7 +228,13 @@
   letter-spacing: -1px;
   line-height: 1;
 
-  @include media-query($on-laptop) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 4mm ridge rgba(85, 107, 47, .6);
+
+    @include media-query($on-laptop) {
     @include relative-font-size(2.25);
   }
 }
@@ -240,9 +246,13 @@
     @include relative-font-size(2);
 
     margin-top: calc($spacing-unit);
+
+    padding-top: 4px;
+    padding-left: 10px;
     border-left: 8px #556b2f solid;
     border-bottom: 2px #556b2f solid;
-    padding-left: 10px;
+    //color: #556b2f;
+    //background-color: rgba(85, 130, 50, .2);
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
@@ -253,7 +263,7 @@
     @include relative-font-size(1.80);
 
     margin-top: calc($spacing-unit/2);
-    border-bottom: 1px #888888 solid;
+    border-bottom: 2px #444444 solid;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
@@ -264,6 +274,7 @@
     @include relative-font-size(1.625);
 
     margin-bottom: calc($spacing-unit/10);
+    border-bottom: 1px #888888 dashed;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
@@ -274,9 +285,7 @@
     @include relative-font-size(1.25);
 
     margin-bottom: calc($spacing-unit/10);
-
-    border-left: 8px #DDDDDD solid;
-    padding-left: 10px;
+//    font-weight: bold;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
