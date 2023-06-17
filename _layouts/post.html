@@ -9,6 +9,9 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = "%Y.%m.%d" -%}
         {{ page.date | date: date_format }}
+	{%- if page.updated -%}
+        <br/>(最終更新) {{ page.updated | date: date_format }}
+	{%- endif -%}
       </time>
       {%- if page.author -%}
         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
